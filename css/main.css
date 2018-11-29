@@ -493,11 +493,21 @@ a:hover {
   .portfolio-item img{
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 50%;
     height: 105%;
     max-width: none;
     width: auto;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .portfolio-item img{
+    transition: 0.3s;
+  }
+  .portfolio-item:hover img{
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
