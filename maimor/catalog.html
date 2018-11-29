@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Mi Amor</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+
+<div id="feedback" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt col-wt">Закажите звонок</div>
+    <p>Оставьте свои контактные данные в полях ниже. Менеджер свяжется с вами в течение 30 минут. </p>
+    <form action="#">
+      <div class="form-group">
+        <label for="modal-inp1">Ваш номер телефона</label>
+        <input id="modal-inp1" type="tel" placeholder="Например, +7 (999) 451-78-54">
+      </div>
+      <button class="btn btn--max col-wt">Закажите звонок</button>
+      <div class="check-bl">
+        <label>
+          <input type="checkbox" checked>
+          <span class="check-bl-txt">Вы соглашаетесь с условиями обработки персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="modal-complete" style="display: none;" class="st-modal">
+  <div class="modal-cont text--center">
+    <div class="modal-cont__tt">Ваше сообщение успешно отправлено.</div>
+    <p>В ближайшее время с вами свяжется наш менеджер.</p>
+  </div>
+</div>
+
+
+<div id="one-click" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt">Заказать в один клик</div>
+    <form action="#">
+      <div class="form-group">
+        <label for="modal-inp2">Фамилия *</label>
+        <input id="modal-inp2" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp3">Имя *</label>
+        <input id="modal-inp3" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp4">Отчество</label>
+        <input id="modal-inp4" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp5">Email *</label>
+        <input id="modal-inp5" type="email">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp6">Ваш номер телефона *</label>
+        <input id="modal-inp6" type="tel">
+      </div>
+      <div class="btn-modal-wrap">
+        <button class="btn btn--max col-wt">Закажите звонок</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="card" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt modal-cont__tt--2">Ваша корзина</div>
+    <div class="card-list-wrap" data-simplebar data-simplebar-auto-hide="false">
+      <div class="card-list">
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card1.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Пирожные Маракони</div>
+            <div class="card-item-price">1x 699 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card2.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Упаковка № 206</div>
+            <div class="card-item-price">1x 206 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card3.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Букет №402</div>
+            <div class="card-item-price">1x 9 529 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card1.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Пирожные Маракони</div>
+            <div class="card-item-price">1x 699 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card2.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Упаковка № 206</div>
+            <div class="card-item-price">1x 206 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card3.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Букет №402</div>
+            <div class="card-item-price">1x 9 529 руб.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p><b>12</b> товаров на сумму <b>12 439 руб.</b></p>
+    <button class="btn btn--max col-wt">Оформить заказ</button>
+  </div>
+</div>
+
+<body>
+
+<div id="wrapper">
+
+
+
+
+<!-- header -->
+<header id="header" class="header">
+  <div class="container">
+
+    <div class="logo"><a href="#"><img src="img/logo2.svg" alt=""></a></div>
+
+    <div class="head-menu">
+      <div class="burger-menu">
+        <div class="burger-menu-box">
+          <div class="burger-menu-inner"></div>
+        </div>
+      </div>
+      <div class="menu-wrapper-fixed">
+        <div class="menu-open-wrapper">
+          <nav class="header-nav">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="about.html" class="menu-item__link">О нас</a>
+              </li>
+              <li class="menu-item">
+                <a href="catalog.html" class="menu-item__link">Каталог</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__link">Оформление мероприятий</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__link">Клиентам</a>
+              </li>
+              <li class="menu-item">
+                <a href="contacts.html" class="menu-item__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-cont">
+      <div class="search">
+        <form action="#" class="search-form">
+          <input type="text" placeholder="Поиск...">
+          <button class="btn-search" type="button"><i class="icon icon-search"></i></button>
+        </form>
+      </div>
+      <a href="#card" data-fancybox class="link-basket">
+        <span class="link-basket__ic">
+          <i class="icon icon-cart"></i>
+          <span>2</span>
+        </span>
+        <span class="link-basket__txt">Корзина (12 439 Р)</span>
+      </a>
+    </div>
+
+  </div>
+</header>
+<!-- end header -->
+
+  <div id="middle">
+    <section class="section-st section-st--inner">
+      <div class="container container--min">
+        <ul class="bread-crumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Букеты</a></li>
+          <li>Праздничные</li>
+        </ul>
+        <div class="content-wrap">
+          <div class="aside">
+            <div class="aside-tt">Фильтр</div>
+            <div class="aside-cont">
+              <div class="aside-item">
+                <div class="aside-item-tt">Выберите размер</div>
+                <div class="aside-item__bl">
+                  <div class="aside-list">
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Маленький</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Средний</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Большой</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-item">
+                <div class="aside-item-tt">Тип букета</div>
+                <div class="aside-item__bl">
+                  <div class="aside-list">
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Универсальные</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Свадебные</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Праздничные</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Мужские</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Детские</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Цветы в коробке</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Букет из цветов</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-item">
+                <div class="aside-item-tt">Цветы в букете</div>
+                <div class="aside-item__bl">
+                  <div class="aside-list">
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Розы</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Тюльпаны</span>
+                      </label>
+                    </div>
+                    <div class="aside-list__item check-bl">
+                      <label>
+                        <input type="checkbox">
+                        <span class="check-txt">Пионы</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-item">
+                <div class="aside-item-tt aside-item-tt--normal">Цена, руб.</div>
+                <div class="slider-price-wrapp">
+                  <div class="slider-price-inputs">
+                    <div class="slider-price-input-one">
+                      <input type="text" id="input-with-sliderPriceOne-0">
+                    </div>
+                    <div class="slider-price-input-two">
+                      <input type="text" id="input-with-sliderPriceOne-1">
+                    </div>
+                  </div>
+                  <div id="sliderPriceOne" class="slider-price"></div>
+                </div>
+              </div>
+              <div class="aside-btn">
+                <button class="btn col-wt">Применить</button>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="product-list">
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog1.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                  <span class="product-list-img-tt">Акция</span>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №030</a></div>
+                  <div class="price">
+                    <span class="old-price">499 руб.</span>
+                    <span class="new-price">199 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog2.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №029</a></div>
+                  <div class="price">
+                    <span class="new-price">499 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog3.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №028</a></div>
+                  <div class="price">
+                    <span class="new-price">269 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog4.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №025</a></div>
+                  <div class="price">
+                    <span class="new-price">269 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog5.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №023</a></div>
+                  <div class="price">
+                    <span class="new-price">499 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog6.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №022</a></div>
+                  <div class="price">
+                    <span class="new-price">269 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog7.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №021</a></div>
+                  <div class="price">
+                    <span class="new-price">499 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog8.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №026</a></div>
+                  <div class="price">
+                    <span class="new-price">499 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+              <div class="product-list-item">
+                <div class="product-list-item__img">
+                  <img src="img/prod-catalog9.jpg" alt="">
+                  <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+                </div>
+                <div class="product-list-item__txt">
+                  <div class="title-site--h4"><a href="#">Букет №027</a></div>
+                  <div class="price">
+                    <span class="new-price">269 руб.</span>
+                  </div>
+                  <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+            <div class="content-btm">
+              <a href="#" class="btn btn--border btn--max">Показать еще</a>
+              <div class="content-btm__pages">
+                <div class="content-btm-select">
+                  <select>
+                    <option>Показать 10</option>
+                    <option>Показать 10</option>
+                    <option>Показать 10</option>
+                  </select>
+                </div>
+                <ul class="pagination">
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li class="pagination__next"><a href="#">Следующая</a></li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-wrap">
+          <div class="title-site--h2">Мы рекомендуем</div>
+          <div class="product-list">
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img4.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Открытки №456</a></div>
+                <div class="price">
+                  <span class="new-price">399 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img9.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Лента</a></div>
+                <div class="price">
+                  <span class="new-price">99 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img10.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Упаковка №206</a></div>
+                <div class="price">
+                  <span class="new-price">699 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img11.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Пирожные Маракони</a></div>
+                <div class="price">
+                  <span class="new-price">699 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st--inner section-st--border">
+      <div class="container container--min">
+        <div class="product-list-wrap">
+          <div class="title-site--h2">Недавно просмотренные</div>
+          <div class="product-list">
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img5.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Букет №119</a></div>
+                <div class="price">
+                  <span class="new-price">13 399 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img6.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Букет №106</a></div>
+                <div class="price">
+                  <span class="new-price">15 249 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img7.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Букет №402</a></div>
+                <div class="price">
+                  <span class="new-price">9 529 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+            <div class="product-list-item">
+              <div class="product-list-item__img">
+                <img src="img/prod-img8.jpg" alt="">
+                <a href="#one-click" data-fancybox class="btn col-wt">Купить в один клик</a>
+              </div>
+              <div class="product-list-item__txt">
+                <div class="title-site--h4"><a href="#">Букет №454</a></div>
+                <div class="price">
+                  <span class="new-price">17 699 руб.</span>
+                </div>
+                <a href="#" class="link-catalog-basket">Добавить в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-slider">
+      <div class="section-slider__txt">#galereiatsvetovmiamor</div>
+      <div class="owl-carousel slider-img">
+        <div class="slider-img-item">
+          <img src="img/slider-img1.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img2.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img3.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img4.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img5.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img6.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img1.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img2.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img3.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img4.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img5.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img6.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img1.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="text--center">
+      <i class="icon icon-flower"></i>
+    </div>
+    <div class="footer-cont">
+      <ul class="footer-nav hidden-devices">
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Оформление мероприятий</a></li>
+        <li><a href="#">Клиентам</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer-cont__block">
+        <a href="#" target="_blank" class="link-itc"><img src="img/logo-itc.svg" alt=""></a>
+        <div class="copy">«Mi amor» © 2004 – 2018</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</div><!-- #wrapper -->
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/libsmin/jquery.viewportchecker.min.js"></script>
+<script src="js/libsmin/nouislider.js"></script>
+<script src="js/libsmin/simplebar.js"></script>
+<script src="js/libsmin/jquery.parallax-scroll.js"></script>
+<script src="js/libsmin/jquery.easing.1.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //slider 1
+  var sliderPriceOne = document.getElementById('sliderPriceOne');
+  var oneinput0 = document.getElementById('input-with-sliderPriceOne-0');
+  var oneinput1 = document.getElementById('input-with-sliderPriceOne-1');
+  var oneinputs = [oneinput0, oneinput1];
+
+  noUiSlider.create(sliderPriceOne, {
+    start: [1000, 5000],
+    connect: true,
+    step: 100,
+    tooltips: true,
+    behaviour: 'tap',
+    range: {
+      'min': 0,
+      'max': 10000
+    }
+  });
+
+  sliderPriceOne.noUiSlider.on('update', function( values, handle ) {
+    oneinputs[handle].value = values[handle];
+  });
+
+  function setSliderHandle(i, value) {
+    var r = [null,null];
+    r[i] = value;
+    sliderPriceOne.noUiSlider.set(r);
+  }
+
+  // Listen to keydown events on the input field.
+  oneinputs.forEach(function(input, handle) {
+    input.addEventListener('change', function(){
+      setSliderHandle(handle, this.value);
+    });
+  });
+</script>
+
+</body>
+</html>

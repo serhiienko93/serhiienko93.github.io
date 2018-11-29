@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Mi Amor</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+
+<div id="feedback" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt col-wt">Закажите звонок</div>
+    <p>Оставьте свои контактные данные в полях ниже. Менеджер свяжется с вами в течение 30 минут. </p>
+    <form action="#">
+      <div class="form-group">
+        <label for="modal-inp1">Ваш номер телефона</label>
+        <input id="modal-inp1" type="tel" placeholder="Например, +7 (999) 451-78-54">
+      </div>
+      <button class="btn btn--max col-wt">Закажите звонок</button>
+      <div class="check-bl">
+        <label>
+          <input type="checkbox" checked>
+          <span class="check-bl-txt">Вы соглашаетесь с условиями обработки персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="modal-complete" style="display: none;" class="st-modal">
+  <div class="modal-cont text--center">
+    <div class="modal-cont__tt">Ваше сообщение успешно отправлено.</div>
+    <p>В ближайшее время с вами свяжется наш менеджер.</p>
+  </div>
+</div>
+
+
+<div id="one-click" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt">Заказать в один клик</div>
+    <form action="#">
+      <div class="form-group">
+        <label for="modal-inp2">Фамилия *</label>
+        <input id="modal-inp2" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp3">Имя *</label>
+        <input id="modal-inp3" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp4">Отчество</label>
+        <input id="modal-inp4" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp5">Email *</label>
+        <input id="modal-inp5" type="email">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp6">Ваш номер телефона *</label>
+        <input id="modal-inp6" type="tel">
+      </div>
+      <div class="btn-modal-wrap">
+        <button class="btn btn--max col-wt">Закажите звонок</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="card" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt modal-cont__tt--2">Ваша корзина</div>
+    <div class="card-list-wrap" data-simplebar data-simplebar-auto-hide="false">
+      <div class="card-list">
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card1.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Пирожные Маракони</div>
+            <div class="card-item-price">1x 699 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card2.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Упаковка № 206</div>
+            <div class="card-item-price">1x 206 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card3.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Букет №402</div>
+            <div class="card-item-price">1x 9 529 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card1.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Пирожные Маракони</div>
+            <div class="card-item-price">1x 699 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card2.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Упаковка № 206</div>
+            <div class="card-item-price">1x 206 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card3.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Букет №402</div>
+            <div class="card-item-price">1x 9 529 руб.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p><b>12</b> товаров на сумму <b>12 439 руб.</b></p>
+    <button class="btn btn--max col-wt">Оформить заказ</button>
+  </div>
+</div>
+
+<body>
+
+<div id="wrapper" class="main-screen-wrapper">
+
+
+
+  <div id="middle">
+    <section class="main-screen">
+
+
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container">
+
+          <div class="logo"><a href="#"><img src="img/logo2.svg" alt=""></a></div>
+
+          <div class="head-menu">
+            <div class="burger-menu">
+              <div class="burger-menu-box">
+                <div class="burger-menu-inner"></div>
+              </div>
+            </div>
+            <div class="menu-wrapper-fixed">
+              <div class="menu-open-wrapper">
+                <nav class="header-nav">
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="about.html" class="menu-item__link">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="catalog.html" class="menu-item__link">Каталог</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Оформление мероприятий</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Клиентам</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="contacts.html" class="menu-item__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-cont">
+            <div class="search">
+              <form action="#" class="search-form">
+                <input type="text" placeholder="Поиск...">
+                <button class="btn-search" type="button"><i class="icon icon-search"></i></button>
+              </form>
+            </div>
+            <a href="#card" data-fancybox class="link-basket">
+              <span class="link-basket__ic">
+                <i class="icon icon-cart"></i>
+              </span>
+              <span class="link-basket__txt">В корзине пусто</span>
+            </a>
+          </div>
+
+        </div>
+      </header>
+      <!-- end header -->
+
+      <div class="main-screen-img animate-appearance"><img src="img/main-screen.jpg" alt=""></div>
+
+      <div class="container">
+        <div class="main-screen-cont">
+          <div class="title-site--h1 col-wt">Премиальные букеты от ведущих флористов Брянска</div>
+          <p>Сделайте сюрприз незабываемым, с доставкой Miamor!</p>
+          <div class="text--center">
+            <a href="#modal-complete" data-fancybox class="btn btn--min-width btn--second-st">Заказать букет</a>
+          </div>
+          <div class="text--center">
+            <a href="about.html" class="col-wt">Подробнее о Миамор</a>
+          </div>
+          <a href="#company-description-wrap" class="scrollto scroll-to-down">
+            <span class="scroll-to-down__ic"><i class="icon icon-arrow-down"></i></span>
+            <span class="scroll-to-down__txt">Листайте вниз</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-st" id="company-description-wrap">
+      <div class="container">
+        <div class="company-description">
+          <div class="company-description-info animate-appearance">
+            <div class="company-description-info__img">
+              <img src="img/cont-img1.jpg" alt="">
+            </div>
+            <div class="company-description-info__txt">
+              <div class="company-description-ic">
+                <i class="icon icon-flower"></i>
+              </div>
+              <p>Сеть магазинов «Mi Amor» — цветочная сеть эксклюзивных авторских букетов с доставкой по Брянску и Брянской области. У нас вы можете заказать букеты из живых цветов, флористические композиции, подарки и цветочный декор для свадеб и других торжественных мероприятий.</p>
+              <p>Мы постоянно отслеживаем новые тренды, пополняем ассортимент цветов (включая экзотические и редкие сорта), придумываем и воплощаем самые оригинальные идеи, чтобы дарить радость нашим заказчикам и получателям букетов.</p>
+            </div>
+          </div>
+          <div class="company-description-adv">
+            <div class="company-description-adv__img" id="scene" data-hover-only="true">
+              <img src="img/cont-img2.jpg" alt="">
+              <div class="company-description-img-ic company-description-img-ic--1" data-depth="0.5"><img src="img/cont-img-ic1.png" alt=""></div>
+              <div class="company-description-img-ic company-description-img-ic--2" data-depth="0.5"><img src="img/cont-img-ic2.png" alt=""></div>
+            </div>
+            <div class="company-description-adv__txt">
+              <ul class="list-adv list-adv--line animate-appearance">
+                <li>
+                  <div class="list-adv-ic">
+                    <i class="icon icon-adv1"></i>
+                  </div>
+                  <div class="list-adv-txt">
+                    <p>100% гарантия качества цветов</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-adv-ic">
+                    <i class="icon icon-adv2"></i>
+                  </div>
+                  <div class="list-adv-txt">
+                    <p>У нас <span class="list-adv-txt-important">САМЫЕ</span>  приятные цены на букеты, цветочные композиции и на оформления мероприятий!</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-adv-ic">
+                    <i class="icon icon-adv3"></i>
+                  </div>
+                  <div class="list-adv-txt">
+                    <p>У нас <span class="list-adv-txt-important">САМЫЙ</span> вежливый персонал, начиная с администраторов и заканчивая водителями!</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-adv-ic">
+                    <i class="icon icon-adv4"></i>
+                  </div>
+                  <div class="list-adv-txt">
+                    <p>Мы осуществляем <span class="list-adv-txt-important">САМУЮ</span> своевременную доставку по Брянску и Брянской области 24/7 в любое удобное для Вас время!</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-adv-ic">
+                    <i class="icon icon-adv5"></i>
+                  </div>
+                  <div class="list-adv-txt">
+                    <p>Скидки с первого заказа</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-adv-ic">
+                    <i class="icon icon-adv6"></i>
+                  </div>
+                  <div class="list-adv-txt">
+                    <p>И, конечно, у нас <span class="list-adv-txt-important">САМЫЕ</span> лучшие и любимые заказчики!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="section-st__img section-st__img--14 hidden-devices"><img src="img/cont-ic8.png" alt="" data-parallax='{"y" : 80}'></span>
+      <span class="section-st__img section-st__img--15 hidden-devices"><img src="img/cont-ic9.png" alt="" data-parallax='{"y" : -60}'></span>
+      <span class="section-st__img section-st__img--16 hidden-devices"><img src="img/cont-ic10.png" alt="" data-parallax='{"y" : 200}'></span>
+    </section>
+
+    <section class="section-st section-st--light">
+      <div class="container">
+        <div class="catalog-wrap">
+          <div class="content-tt">Наш каталог</div>
+          <div class="catalog-grid">
+            <div class="catalog-item catalog-item--md">
+              <div class="catalog-row">
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog1.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Универсальные</span>
+                </a>
+              </div>
+              <div class="catalog-row catalog-row--grid">
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog2.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Праздничные</span>
+                </a>
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog3.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Мужские</span>
+                </a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <a href="#" class="catalog-grid-link">
+                <span class="catalog-grid-link__img"><img src="img/catalog4.jpg" alt=""></span>
+                <span class="catalog-grid-link__tt">Свадебные</span>
+              </a>
+            </div>
+            <div class="catalog-item">
+              <a href="#" class="catalog-grid-link">
+                <span class="catalog-grid-link__img"><img src="img/catalog5.jpg" alt=""></span>
+                <span class="catalog-grid-link__tt">Детские</span>
+              </a>
+            </div>
+            <div class="catalog-item catalog-item--md">
+              <div class="catalog-row">
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog6.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Цветы в коробке</span>
+                </a>
+              </div>
+              <div class="catalog-row catalog-row--grid">
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog7.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Букеты из цветов</span>
+                </a>
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog8.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Топперы</span>
+                </a>
+              </div>
+            </div>
+            <div class="catalog-item catalog-item--md catalog-item--md2">
+              <div class="catalog-row">
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog9.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Открытки к букетам</span>
+                </a>
+              </div>
+              <div class="catalog-row">
+                <a href="#" class="catalog-grid-link">
+                  <span class="catalog-grid-link__img"><img src="img/catalog10.jpg" alt=""></span>
+                  <span class="catalog-grid-link__tt">Сертификаты</span>
+                </a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <a href="#" class="catalog-grid-link">
+                <span class="catalog-grid-link__img"><img src="img/catalog11.jpg" alt=""></span>
+                <span class="catalog-grid-link__tt">Шарики</span>
+              </a>
+            </div>
+          </div>
+          <span class="section-st__img section-st__img--4 hidden-devices"><img src="img/cont-ic4.png" alt="" data-parallax='{"y" : 130}'></span>
+          <span class="section-st__img section-st__img--5 hidden-devices"><img src="img/cont-ic5.png" alt="" data-parallax='{"y" : -230}'></span>
+        </div>
+      </div>
+      <span class="section-st__img section-st__img--2 hidden-devices"><img src="img/cont-ic2.png" alt="" data-parallax='{"y" : -30}'></span>
+      <span class="section-st__img section-st__img--3 hidden-devices"><img src="img/cont-ic3.png" alt="" data-parallax='{"y" : 230}'></span>
+    </section>
+
+    <section class="section-bg" style="background-image:url('img/cont-bg1.jpg')">
+      <div class="container">
+        <div class="title-site--h3 col-wt text--center">Присоединяйся к Mi Amor</div>
+        <div class="send-mail">
+          <form action="#" class="send-mail-form">
+            <div class="form-group">
+              <input type="email" placeholder="Ваш email" required>
+              <div class="form-group__error">Ошибка</div>
+              <button class="btn">Подписывайся</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <span class="section-st__img section-st__img--6 hidden-devices"><img src="img/cont-ic6.png" alt="" data-parallax='{"y" : -130}'></span>
+    </section>
+  </div><!-- #middle-->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="text--center">
+      <i class="icon icon-flower"></i>
+    </div>
+    <div class="footer-cont">
+      <ul class="footer-nav hidden-devices">
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Оформление мероприятий</a></li>
+        <li><a href="#">Клиентам</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer-cont__block">
+        <a href="#" target="_blank" class="link-itc"><img src="img/logo-itc.svg" alt=""></a>
+        <div class="copy">«Mi amor» © 2004 – 2018</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</div><!-- #wrapper -->
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/libsmin/jquery.viewportchecker.min.js"></script>
+<script src="js/libsmin/nouislider.js"></script>
+<script src="js/libsmin/simplebar.js"></script>
+<script src="js/libsmin/jquery.parallax-scroll.js"></script>
+<script src="js/libsmin/jquery.easing.1.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+
+
+
+  <div id="middle">
+
+
+    <section class="section-main-screen section-main-screen-map korpus">
+
+
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container">
+          <div class="header-nav-cont">
+            <div class="head-menu">
+              <div class="burger-menu">
+                <div class="burger-menu-box">
+                  <div class="burger-menu-inner"></div>
+                </div>
+                <span class="burger-menu-txt">Меню</span>
+              </div>
+              <div class="menu-wrapper-fixed">
+                <div class="menu-open-wrapper">
+                <div class="menu-open-wrapper-bl">
+                  <div class="menu-open-wrapper-head">
+                    <div class="logo hidden-devices">
+                      <a href="#"><img src="img/logo.svg" alt=""></a>
+                    </div>
+                    <div class="lang-panel">
+                      <a href="#" class="active">Ru</a>
+                      <a href="#">En</a>
+                      <a href="#">Fi</a>
+                      <a href="#">Cn</a>
+                    </div>
+                  </div>
+                  <div class="menu-open-wrapper-cont">
+                    <div class="menu-open-wrapper-list form-group-grid">
+                      <ul class="menu-open-wrapper-list-item">
+                        <li><a href="#">Размещение</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Карта Усадьбы</a></li>
+                      </ul>
+                      <ul class="menu-open-wrapper-list-item">
+                        <li><a href="#">Досуг</a></li>
+                        <li><a href="#">Ресторан</a></li>
+                        <li><a href="#">Для детей</a></li>
+                      </ul>
+                      <ul class="menu-open-wrapper-list-item">
+                        <li><a href="#">Об Усадьбе</a> <sup class="sup-info-link">2 новости</sup></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Как добраться</a></li>
+                      </ul>
+                      <ul class="menu-open-wrapper-list-item menu-open-wrapper-list-sm">
+                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a href="#">Свадьбы</a></li>
+                        <li><a href="#">Для бизнеса</a></li>
+                        <li><a href="#" class="active">Новый Год</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="menu-open-wrapper-contact form-group-grid">
+                    <div class="menu-open-wrapper-contact-lg form-group-grid__three-col">
+                      <div class="phone-link-wrap">
+                        <a href="tel:8 800 100 29 92" class="phone-link">8 800 100 29 92</a>
+                      </div>
+                      <p>186792, Республика Карелия, г.Сортавала <br>п.Ниэмелянхови, ул.Озерная, д.1 карта</p>
+                    </div>
+                    <div class="form-group-grid__three-col">
+                      <div class="soc-links">
+                        <span class="soc-links-tt">Мы в соцсетях</span>
+                        <div>
+                          <a href="#"><i class="icon icon-vk2"></i></a>
+                          <a href="#"><i class="icon icon-youtube"></i></a>
+                          <a href="#"><i class="icon icon-fb"></i></a>
+                          <a href="#"><i class="icon icon-insta"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group-grid__three-col">
+                      <a href="#" class="btn btn--icon">
+                        <i class="icon icon-reserve"></i>
+                        <span>Бронировать</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="address-link">
+              <i class="icon icon-address"></i>
+              <span class="address-link-txt">Карелия, п. Ниэмелянхови</span>
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="header-contact hidden-devices">
+            <a href="tel:8 (800) 100 29 92" class="phone-link">8 (800) 100 29 92</a>
+            <a href="#" class="reserve-link">
+              <i class="icon icon-reserve"></i>
+              <span class="reserve-link-txt">Бронировать</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <ul class="nav-tabs tabs-nav">
+        <li class="active">на карте</li>
+        <li>спутник</li>
+      </ul>
+
+      <div class="box visible">
+        <span class="section-main-screen-img"><div class="map" id="map"></div></span>
+      </div>
+
+      <div class="box">
+        <span class="section-main-screen-img"><div class="map" id="map2"></div></span>
+      </div>
+
+
+    </section>
+
+
+    <div class="container">
+      <div class="contact section-st--light">
+        <div class="contact-top">
+          <div class="contact-item">
+            <i class="icon icon-car"></i>
+            <span class="contact-item-txt">61°36′35.02″N (61.609728) 30°34′5.61″E (30.568224)</span>
+          </div>
+          <div class="contact-item">
+            <i class="icon icon-airplane"></i>
+            <span class="contact-item-txt">61°36′31.62″N 30°34′16.82″E</span>
+          </div>
+          <div class="contact-item">
+            <i class="icon icon-boat"></i>
+            <span class="contact-item-txt">61°36′37.80″N 30°34′10.63″E</span>
+          </div>
+        </div>
+        <div class="contact-cont">
+          <div class="contact-cont-item">
+            <span class="contact-cont-item-tt">адрес</span>
+            <p><span>186792, Республика Карелия,</span> <span>г. Сортавала, п. Ниэмелянхови,</span> <span>ул.Озерная, д. 1</span></p>
+          </div>
+          <div class="contact-cont-item">
+            <span class="contact-cont-item-tt">бронирование</span>
+            <p>+7 (921) 700 15 15 <br>время работы – 9:00- 17:00<br> <a href="#">info@ladoga-usadba.ru</a></p>
+          </div>
+          <div class="contact-cont-item">
+            <span class="contact-cont-item-tt">администрация</span>
+            <p>8 (800) 100 29 92  <br>круглосуточно</p>
+          </div>
+          <div class="contact-cont-item">
+            <span class="contact-cont-item-tt">ресторан</span>
+            <p>+7(921) 700-10-20<br> <a href="#">restoranusadba@mail.ru</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-min contact-tabs-wrap">
+        <div class="nav-tabs">
+          <a href="#" class="active">Трансфер</a>
+          <a href="#">на машине</a>
+        </div>
+        <ul class="tabs-content text--center">
+          <li class="active"><a href="#">микроавтобус</a></li>
+          <li><a href="#">Вертолет</a></li>
+          <li><a href="#">по воде</a></li>
+        </ul>
+        <div class="contact-tabs-cont">
+          <div class="contact-tabs-item">
+            <span class="contact-cont-item-tt">время в пути</span>
+            <p>от 3 до 3,5 часа</p>
+          </div>
+          <div class="contact-tabs-item">
+            <span class="contact-cont-item-tt">отправление из санкт-петербурга</span>
+            <p>Аэропорт «Пулково»<br> Московский вокзал<br> Ладожский вокзал<br> Витебский вокзал<br> Финляндский вокзал</p>
+          </div>
+          <div class="contact-tabs-item">
+            <span class="contact-cont-item-tt">контакты</span>
+            <p>+7 921 700 80 80, <br>+7 921 700 15 15</p>
+          </div>
+        </div>
+        <div class="slider-content-wrap slider-wrap">
+          <div class="owl-carousel slider-cont">
+            <div class="slider-contact">
+              <img src="img/slider-img2.jpg" alt="">
+              <div class="slider-contact-txt">
+                <span class="contact-cont-item-tt">Mercedes Sprinter</span>
+                <p>Вместимость 20 чел.<br> 19 500 рублей</p>
+              </div>
+            </div>
+            <div class="slider-contact">
+              <img src="img/slider-img2.jpg" alt="">
+              <div class="slider-contact-txt">
+                <span class="contact-cont-item-tt">Mercedes Sprinter</span>
+                <p>Вместимость 20 чел.<br> 19 500 рублей</p>
+              </div>
+            </div>
+            <div class="slider-contact">
+              <img src="img/slider-img2.jpg" alt="">
+              <div class="slider-contact-txt">
+                <span class="contact-cont-item-tt">Mercedes Sprinter</span>
+                <p>Вместимость 20 чел.<br> 19 500 рублей</p>
+              </div>
+            </div>
+            <div class="slider-contact">
+              <img src="img/slider-img2.jpg" alt="">
+              <div class="slider-contact-txt">
+                <span class="contact-cont-item-tt">Mercedes Sprinter</span>
+                <p>Вместимость 20 чел.<br> 19 500 рублей</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section-st-btm section-st-reservation-panel">
+      <div class="container container-min">
+        <form class="reservation-panel">
+            <div class="reservation-panel-lf">
+              <div class="reservation-panel-item">
+                <span class="reservation-panel-tt">Заезд</span>
+                <div class="date-pic-wrap">
+                  <input type="text" value="17 Фев" id="datepicker" readonly="readonly" class="data-pic">
+                </div>
+              </div>
+              <div class="reservation-panel-item">
+                <span class="reservation-panel-tt">выезд</span>
+                <div class="date-pic-wrap">
+                  <input type="text" value="20 Фев" id="datepicker2" readonly="readonly" class="data-pic">
+                </div>
+              </div>
+              <div class="reservation-panel-item">
+                <span class="reservation-panel-tt">взрослых</span>
+                <input type="number" value="0" min="0" max="99">
+              </div>
+              <div class="reservation-panel-item">
+                <span class="reservation-panel-tt">детей</span>
+                <input type="number" value="0" min="0" max="99">
+              </div>
+            </div>
+            <div class="reservation-panel-btn">
+              <button class="btn">Подобрать</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div><!-- #middle-->
+
+
+
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container container-min">
+    <div class="footer-soc">
+      <div class="footer-soc-bl">
+        <a href="#" class="footer-soc-item footer-soc-item1">
+          <span class="footer-soc-icon">
+            <i class="icon icon-vk"></i>
+          </span>
+          <span class="footer-soc-txt"><b>9.2</b> Отлично</span>
+        </a>
+        <a href="#" class="footer-soc-item footer-soc-item2">
+          <span class="footer-soc-icon">
+            <i class="icon icon-tripadvisor"></i>
+          </span>
+          <span class="footer-soc-txt"><b>4.5</b> Браво</span>
+        </a>
+        <a href="#" class="footer-soc-item footer-soc-item3">
+          <span class="footer-soc-icon">
+            <i class="icon icon-f"></i>
+          </span>
+          <span class="footer-soc-txt"><b>8.5</b> Баллов</span>
+        </a>
+      </div>
+      <div class="soc-links">
+        <div>
+          <a href="#"><i class="icon icon-vk2"></i></a>
+          <a href="#"><i class="icon icon-youtube"></i></a>
+          <a href="#"><i class="icon icon-fb"></i></a>
+          <a href="#"><i class="icon icon-insta"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cont">
+      <div class="footer-cont-bl">
+        <div class="logo">
+          <a href="#"><img src="img/logo.svg" alt=""></a>
+        </div>
+        <span class="copy">© Комплекс "Ладожская Усадьба" <br>г. Сортавала, 2017</span>
+      </div>
+      <a href="#" class="link-spbnews">Разработано Spbnews</a>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/magnific-popup.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+      function initMap() {
+        var uluru = {lat: 61.609728, lng: 30.568224};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        center: uluru,
+        zoom: 14,
+        styles: [
+          {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#2b2b2b"
+                  },
+                  {
+                      "lightness": 5
+                  }
+              ]
+          },
+          {
+              "featureType": "landscape",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#333333"
+                  },
+                  {
+                      "lightness": 5
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "geometry.fill",
+              "stylers": [
+                  {
+                      "color": "#343334"
+                  },
+                  {
+                      "lightness": 17
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                  {
+                      "color": "#343334"
+                  },
+                  {
+                      "lightness": 29
+                  },
+                  {
+                      "weight": 0.2
+                  }
+              ]
+          },
+          {
+              "featureType": "road.arterial",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#343334"
+                  },
+                  {
+                      "lightness": 18
+                  }
+              ]
+          },
+          {
+              "featureType": "road.local",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#343334"
+                  },
+                  {
+                      "lightness": 16
+                  }
+              ]
+          },
+          {
+              "featureType": "poi",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#f5f5f5"
+                  },
+                  {
+                      "lightness": 21
+                  }
+              ]
+          },
+          {
+              "featureType": "poi.park",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#dedede"
+                  },
+                  {
+                      "lightness": 21
+                  }
+              ]
+          },
+          {
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  },
+                  {
+                      "color": "#ffffff"
+                  },
+                  {
+                      "lightness": 1
+                  }
+              ]
+          },
+          {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                  {
+                      "saturation": 10
+                  },
+                  {
+                      "color": "#ffffff"
+                  },
+                  {
+                      "lightness": 100
+                  }
+              ]
+          },
+          {
+              "elementType": "labels.icon",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "transit",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#f2f2f2"
+                  },
+                  {
+                      "lightness": 19
+                  }
+              ]
+          },
+          {
+              "featureType": "administrative",
+              "elementType": "geometry.fill",
+              "stylers": [
+                  {
+                      "color": "#fff"
+                  },
+                  {
+                      "lightness": 20
+                  }
+              ]
+          },
+          {
+              "featureType": "administrative",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                  {
+                      "color": "#ffffff"
+                  },
+                  {
+                      "lightness": 17
+                  },
+                  {
+                      "weight": 1
+                  }
+              ]
+          }
+        ]
+        });
+        setMarkers(map);
+
+
+
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+        center: uluru,
+        mapTypeId: 'satellite',
+        zoom: 14
+        });
+        setMarkers(map2);
+      }
+      var beaches = [
+        ['Bondi Beach', 61.609728, 30.568224]
+      ];
+
+
+
+      function setMarkers(map, map2) {
+        var image = {
+          url: 'img/icon/icon-address.svg',
+          size: new google.maps.Size(20, 29),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(0, 32)
+        };
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+        for (var i = 0; i < beaches.length; i++) {
+          var beach = beaches[i];
+          var marker = new google.maps.Marker({
+            position: {lat: beach[1], lng: beach[2]},
+            map: map,
+            icon: image,
+            shape: shape,
+            title: beach[0],
+            zIndex: beach[3]
+          });
+        }
+      }
+
+
+
+
+
+
+
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL6p5injUWmdrEg2AcnDuWaZEJdodw0r4&callback=initMap">
+</script>
+
+
+
+</body>
+</html>

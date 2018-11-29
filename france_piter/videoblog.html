@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <div id="card-modal" style="display: none;" class="st-modal card-modal">
+      <div class="modal-cont">
+        <div class="title-site--h3">Товар добавлен в корзину!</div>
+        <div class="modal-cont-table">
+          <div class="modal-cont-table__head">
+            <div class="modal-cont-table-item modal-cont-table-item--1">Название</div>
+            <div class="modal-cont-table-item modal-cont-table-item--2">Цена</div>
+            <div class="modal-cont-table-item modal-cont-table-item--3">Количество</div>
+            <div class="modal-cont-table-item modal-cont-table-item--4"></div>
+          </div>
+          <div class="modal-cont-table__body">
+            <div class="modal-cont-table-img"><img src="img/catalog-item1.jpg" alt=""></div>
+            <div class="modal-cont-table-block">
+              <div class="modal-cont-table-item modal-cont-table-item--1">
+                <div class="title-site--h5">BOSCH 0242229630 FR8ME СВЕЧА</div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--2">
+                <div class="price">280 <span class="rouble">q</span></div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--3">
+                <div class="col-panel-tc">
+                  <span class="minus-input">-</span>
+                  <input type="text" value="1">
+                  <span class="plus-input">+</span>
+                </div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--4">
+                <a href="#" class="close-link"><img src="img/close.png" alt=""></a>
+              </div>
+              <div class="modal-cont-table-block__btn">
+                <a href="#" class="btn btn--max btn--sm">
+                  <span>Перейти в корзину и оформить заказ</span>
+                </a>
+                <a href="#" class="btn btn--max btn--second-st btn--sm">
+                  <span>Купить в 1 клик!</span>
+                </a>
+                <div class="text--center">
+                  <a href="#" class="link-cont">Продолжить покупки на сайте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="feedback" style="display: none;" class="st-modal feedback-modal">
+      <div class="modal-cont">
+        <div class="title-site--h3">Обратная связь</div>
+        <form action="#" class="modal-form">
+          <div class="st-form">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="st-form">
+            <input type="tel" placeholder="Телефон">
+          </div>
+          <button class="btn btn--second-st btn--max">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  
+  
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-contact">
+          <div class="header-contact-item header-contact-item--lg">
+            <div class="header-contact-ic">
+              <i class="icon icon-time zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <div class="header-contact-txt__item">Пн-пт: <b>10:00-20:00</b></div>
+              <div class="header-contact-txt__item">Сб-Вс: <b>11:00-17:00</b></div>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <div class="header-contact-ic">
+              <i class="icon icon-phone zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <div class="header-contact-ic">
+              <i class="icon icon-pers zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <a href="#" class="reg-link">Регистрация</a>
+              <span>|</span>
+              <a href="#" class="reg-link reg-link--2">Войти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-cont">
+      <div class="container">
+        <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+        <div class="mark-category">
+          <a href="#" class="mark-category__link"><img src="img/mark-auto1.jpg" alt=""></a>
+          <a href="#" class="mark-category__link"><img src="img/mark-auto2.jpg" alt=""></a>
+          <a href="#" class="mark-category__link"><img src="img/mark-auto3.jpg" alt=""></a>
+        </div>
+        <a href="#feedback" data-fancybox class="btn btn--min-width btn--sm btn--second-st">
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="head-menu">
+        <div class="burger-menu">
+          <div class="burger-menu-box">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+  
+  
+        <div class="menu-wrapper-fixed">
+          <div class="menu-open-wrapper">
+  
+            <nav class="header-nav">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Главная</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Диагностика</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Ремонтные работы</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Тех обслуживание</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link"> Шиномонтаж</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link"> Поиск по VIN</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Каталог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Видеоблог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Новости</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <div id="middle">
+    <section class="section-st section-st--inner section-st--light">
+      <div class="container">
+        <ul class="bread-crumbs">
+          <li>
+            <a href="#" class="bread-crumbs-main">
+              <span class="bread-crumbs-main__ic">
+                <i class="icon icon-home zmdi"></i>
+              </span>
+              <span class="bread-crumbs-main__txt">Главная</span>
+            </a>
+          </li>
+          <li>Видеоблог</li>
+        </ul>
+        <h1 class="title-site--h2">Видеоблог компании France-Piter</h1>
+        <div class="videoblog">
+          <div class="videoblog-item">
+            <div class="videoblog-item__video">
+              <iframe width="100%" height="394" src="https://www.youtube.com/embed/G6A3Ob0iVOw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="videoblog-item__txt">
+              <div class="title-site--h4">Заголовок новости</div>
+              <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. </p>
+            </div>
+          </div>
+          <div class="videoblog-item">
+            <div class="videoblog-item__video">
+              <iframe width="100%" height="394" src="https://www.youtube.com/embed/G6A3Ob0iVOw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="videoblog-item__txt">
+              <div class="title-site--h4">Заголовок новости</div>
+              <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. </p>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination">
+          <li class="pagination__prev"><a href="#" class="zmdi"></a></li>
+          <li><a href="#">1</a></li>
+          <li class="pagination__active"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="pagination__next"><a href="#" class="zmdi"></a></li>
+        </ul>
+        <div class="content-txt">
+          <div class="title-site--h2">SEO Text</div>
+          <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+        </div>
+        <div class="content-txt">
+          <div class="title-site--h2">SEO Text</div>
+          <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="footer-cont-wrap">
+    <div class="container">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+      <div class="mark-category">
+        <a href="#" class="mark-category__link"><img src="img/mark-auto1.jpg" alt=""></a>
+        <a href="#" class="mark-category__link"><img src="img/mark-auto2.jpg" alt=""></a>
+        <a href="#" class="mark-category__link"><img src="img/mark-auto3.jpg" alt=""></a>
+      </div>
+      <div class="header-contact-item hidden-devices">
+        <div class="header-contact-ic">
+          <i class="icon icon-phone zmdi"></i>
+        </div>
+        <div class="header-contact-txt">
+          <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+        </div>
+      </div>
+      <a href="#feedback" data-fancybox class="btn btn--min-width btn--sm btn--second-st">
+        <span>Заказать звонок</span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-nav-wrap hidden-devices">
+    <div class="container">
+      <ul class="menu footer-nav">
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Диагностика</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Ремонтные работы</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Тех обслуживание</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link"> Шиномонтаж</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link"> Поиск по VIN</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Каталог</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Видеоблог</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Новости</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contact-wrap">
+    <div class="container">
+      <div class="header-contact footer-contact">
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-time zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">г. СПб, Московское шоссе, 13, корпус Д - ремзона</div>
+            <div class="header-contact-txt__item">г. СПб, Московское шоссе, 36 -магазин</div>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-time zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">Пн-пт: <b>10:00-20:00</b></div>
+            <div class="header-contact-txt__item">Сб-Вс: <b>11:00-17:00</b></div>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-phone zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">Наш телефон:</div>
+            <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+          </div>
+        </div>
+        <div class="header-contact-item header-contact-item--soc">
+          <a href="#" class="link-soc">
+            <span><i class="icon icon-vk zmdi"></i></span>
+          </a>
+          <a href="#" class="link-soc">
+            <span><i class="icon icon-fb zmdi"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</div><!-- #wrapper -->
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/libsmin/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

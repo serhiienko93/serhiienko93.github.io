@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+  <section class="section-main-screen" style="background-image:url('img/main-screen1.jpg')">
+    <div id="card-modal" style="display: none;" class="st-modal card-modal">
+      <div class="modal-cont">
+        <div class="title-site--h3">Товар добавлен в корзину!</div>
+        <div class="modal-cont-table">
+          <div class="modal-cont-table__head">
+            <div class="modal-cont-table-item modal-cont-table-item--1">Название</div>
+            <div class="modal-cont-table-item modal-cont-table-item--2">Цена</div>
+            <div class="modal-cont-table-item modal-cont-table-item--3">Количество</div>
+            <div class="modal-cont-table-item modal-cont-table-item--4"></div>
+          </div>
+          <div class="modal-cont-table__body">
+            <div class="modal-cont-table-img"><img src="img/catalog-item1.jpg" alt=""></div>
+            <div class="modal-cont-table-block">
+              <div class="modal-cont-table-item modal-cont-table-item--1">
+                <div class="title-site--h5">BOSCH 0242229630 FR8ME СВЕЧА</div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--2">
+                <div class="price">280 <span class="rouble">q</span></div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--3">
+                <div class="col-panel-tc">
+                  <span class="minus-input">-</span>
+                  <input type="text" value="1">
+                  <span class="plus-input">+</span>
+                </div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--4">
+                <a href="#" class="close-link"><img src="img/close.png" alt=""></a>
+              </div>
+              <div class="modal-cont-table-block__btn">
+                <a href="#" class="btn btn--max btn--sm">
+                  <span>Перейти в корзину и оформить заказ</span>
+                </a>
+                <a href="#" class="btn btn--max btn--second-st btn--sm">
+                  <span>Купить в 1 клик!</span>
+                </a>
+                <div class="text--center">
+                  <a href="#" class="link-cont">Продолжить покупки на сайте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="feedback" style="display: none;" class="st-modal feedback-modal">
+      <div class="modal-cont">
+        <div class="title-site--h3">Обратная связь</div>
+        <form action="#" class="modal-form">
+          <div class="st-form">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="st-form">
+            <input type="tel" placeholder="Телефон">
+          </div>
+          <button class="btn btn--second-st btn--max">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  
+  
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-contact">
+          <div class="header-contact-item header-contact-item--lg">
+            <div class="header-contact-ic">
+              <i class="icon icon-time zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <div class="header-contact-txt__item">Пн-пт: <b>10:00-20:00</b></div>
+              <div class="header-contact-txt__item">Сб-Вс: <b>11:00-17:00</b></div>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <div class="header-contact-ic">
+              <i class="icon icon-phone zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <div class="header-contact-ic">
+              <i class="icon icon-pers zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <a href="#" class="reg-link">Регистрация</a>
+              <span>|</span>
+              <a href="#" class="reg-link reg-link--2">Войти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-cont">
+      <div class="container">
+        <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+        <div class="mark-category">
+          <a href="#" class="mark-category__link"><img src="img/mark-auto1.jpg" alt=""></a>
+          <a href="#" class="mark-category__link"><img src="img/mark-auto2.jpg" alt=""></a>
+          <a href="#" class="mark-category__link"><img src="img/mark-auto3.jpg" alt=""></a>
+        </div>
+        <a href="#feedback" data-fancybox class="btn btn--min-width btn--sm btn--second-st">
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="head-menu">
+        <div class="burger-menu">
+          <div class="burger-menu-box">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+  
+  
+        <div class="menu-wrapper-fixed">
+          <div class="menu-open-wrapper">
+  
+            <nav class="header-nav">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Главная</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Диагностика</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Ремонтные работы</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Тех обслуживание</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link"> Шиномонтаж</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link"> Поиск по VIN</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Каталог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Видеоблог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Новости</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+    <div class="main-screen">
+      <div class="container">
+        <div class="title-wrap title-wrap--line">
+          <h1 class="col-wt">Ремонт, обслуживание<br> и продажа запчастей для </h1>
+          <div class="title-site--h4 title-site--normal col-wt title-site--h4-max">Renault, Peugeot, Citroen в Санкт-Петербурге</div>
+        </div>
+        <div class="main-screen-about">
+          <div class="main-screen-about-item">
+            <div class="main-screen-about-item__ic">
+              <span><i class="icon icon-about1"></i></span>
+            </div>
+            <div class="main-screen-about-item__tt">Ремонт и запчасти</div>
+            <p>В одном месте!<br>Быстро и надёжно!</p>
+          </div>
+          <div class="main-screen-about-item">
+            <div class="main-screen-about-item__ic">
+              <span><i class="icon icon-about2"></i></span>
+            </div>
+            <div class="main-screen-about-item__tt">УДОБНОЕ РАСПОЛОЖЕНИЕ</div>
+            <p>В одном месте!<br>Быстро и надёжно!</p>
+          </div>
+          <div class="main-screen-about-item">
+            <div class="main-screen-about-item__ic">
+              <span><i class="icon icon-about3"></i></span>
+            </div>
+            <div class="main-screen-about-item__tt">ОПЫТ БОЛЕЕ 8 ЛЕТ</div>
+            <p>10 минут от метро<br>Звездная </p>
+          </div>
+          <div class="main-screen-about-item">
+            <div class="main-screen-about-item__ic">
+              <span><i class="icon icon-about4"></i></span>
+            </div>
+            <div class="main-screen-about-item__tt">Ремонт и запчасти</div>
+            <p>В одном месте!<br>Быстро и надёжно!</p>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <a href="#" class="btn col-wt btn--second-st">
+            <span>Записаться на сервис</span>
+          </a>
+          <a href="#" class="btn col-wt">
+            <span>Подобрать запчасти</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="middle">
+    <section class="section-st section-st--bg1 section-st--light section-st--padding-btm">
+      <div class="container">
+        <div class="title-wrap title-wrap--line">
+          <div class="title-site--h2">Полный комплекс услуг по ремонту и уходу за Вашим французским автомобилем!</div>
+          <div class="title-site--h4 title-site--normal">Хотите провести ремонт или обслуживание в специализированном сервисе?<br>Приезжайте в France Piter!</div>
+        </div>
+        <div class="about-tuning">
+          <div class="about-tuning-item">
+            <div class="about-tuning-item__img"><span><img src="img/service1.jpg" alt=""></span></div>
+            <div class="about-tuning-item__txt">
+              <div class="title-site--h6">Бесплатная диагностика</div>
+              <p>Хотите убедиться в работоспособности Вашего авто и сделать комплексную проверку?</p>
+            </div>
+            <a href="#" class="btn">
+              <span>Записаться на диагностику</span>
+            </a>
+          </div>
+          <div class="about-tuning-item">
+            <div class="about-tuning-item__img"><span><img src="img/service2.jpg" alt=""></span></div>
+            <div class="about-tuning-item__txt">
+              <div class="title-site--h6">Ремонтнтые работы</div>
+              <p>Произошла поломка, которую Вам хотелось бы быстро и качественно устранить?</p>
+            </div>
+            <a href="#" class="btn">
+              <span>Записаться на диагностику</span>
+            </a>
+          </div>
+          <div class="about-tuning-item">
+            <div class="about-tuning-item__img"><span><img src="img/service3.jpg" alt=""></span></div>
+            <div class="about-tuning-item__txt">
+              <div class="title-site--h6">Техническое обслуживание</div>
+              <p>У Вашего автомобиля пришло время сменить масло, фильтра и свечи зажигания?</p>
+            </div>
+            <a href="#" class="btn">
+              <span>Записаться на диагностику</span>
+            </a>
+          </div>
+          <div class="about-tuning-item">
+            <div class="about-tuning-item__img"><span><img src="img/service4.jpg" alt=""></span></div>
+            <div class="about-tuning-item__txt">
+              <div class="title-site--h6">Шиномонтаж</div>
+              <p>Опять подкралось межсезонье и Вам необходимо "переобуться" на зимние/летние шины?</p>
+            </div>
+            <a href="#" class="btn">
+              <span>Записаться на диагностику</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-st section-st--bg" style="background-image: url('img/bg-cont1.jpg')">
+      <div class="section-application">
+        <div class="section-application__corn section-application__corn--1"></div>
+        <div class="section-application__corn section-application__corn--2"></div>
+        <div class="section-application__img section-application__img--1"><img src="img/car-img1.png" alt=""></div>
+        <div class="section-application__img section-application__img--2"><img src="img/cont-img1.png" alt=""></div>
+        <div class="container">
+          <div class="section-application-txt">
+            <p>Подыскиваете специализированный сервис по ремонту французских авто <br><b>или надежного и недорогого поставщика запчастей?</b></p>
+            <div class="title-wrap title-wrap--line">
+              <div class="title-site--h2">Оставьте заявку</div>
+              <div class="title-site--h4 title-site--normal">и France Piter с радостью поможет Вам по любому вопросу связанному с французскими автомобилями!</div>
+            </div>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn--second-st">
+                <span>Записаться на сервис</span>
+              </a>
+              <a href="#" class="btn">
+                <span>Подобрать запчасти</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="title-wrap title-wrap--line">
+          <div class="title-site--h2 col-wt">Любые запчасти для всех марок французских авто в наличии и с моментальной доставкой!</div>
+          <div class="title-site--h4 col-wt title-site--normal">Ищите конкретную оригинальную запчасть или более дешевый аналог?<br>Приезжайте в France Piter!</div>
+        </div>
+        <div class="text-bl-grid parts-selection">
+          <div class="text-bl-grid__half-col parts-selection-item">
+            <div class="title-site--h4 col-wt title-site--bold">Подбор запчастей по <br>VIN номеру</div>
+            <form action="#" class="parts-selection-item__form">
+              <div class="st-form">
+                <input type="text" placeholder="Введите VIN номер">
+              </div>
+              <div class="text--center">
+                <button class="btn col-wt btn--second-st">
+                  <span>Подобрать запчасть</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="text-bl-grid__half-col parts-selection-item">
+            <div class="title-site--h4 col-wt title-site--bold">Подбор запчастей по марке авто</div>
+            <form action="#" class="parts-selection-item__form">
+              <div class="form-group-grid">
+                <div class="form-group-grid__half-col">
+                  <div class="select-wrap select-max-wrapp">
+                    <select>
+                      <option>Производитель</option>
+                      <option>Производитель</option>
+                      <option>Производитель</option>
+                    </select>
+                  </div>
+                  <div class="select-wrap select-max-wrapp">
+                    <select>
+                      <option>Марка авто</option>
+                      <option>Марка авто</option>
+                      <option>Марка авто</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group-grid__half-col">
+                  <div class="select-wrap select-max-wrapp">
+                    <select>
+                      <option>Двигатель</option>
+                      <option>Двигатель</option>
+                      <option>Двигатель</option>
+                    </select>
+                  </div>
+                  <div class="select-wrap select-max-wrapp">
+                    <select>
+                      <option>Тип запчасти</option>
+                      <option>Тип запчасти</option>
+                      <option>Тип запчасти</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text--center">
+                <button class="btn col-wt btn--second-st">
+                  <span>Подобрать запчасть</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-st section-st--bg2">
+      <span class="section-img-cont section-img-cont--1"><img src="img/bg-cont-ic2.png" alt=""></span>
+      <div class="container">
+        <div class="title-wrap title-wrap--line">
+          <div class="title-site--h2">Мы работаем только с проверенными поставщиками запасных частей!</div>
+        </div>
+        <div class="partner-slider owl-carousel">
+          <div class="partner-slider-item">
+            <span><img src="img/partner1.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner2.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner3.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner4.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner1.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner2.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner3.png" alt=""></span>
+          </div>
+          <div class="partner-slider-item">
+            <span><img src="img/partner4.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-st section-st--bg3">
+      <span class="section-img-cont section-img-cont--2"><img src="img/bg-cont-ic1.png" alt=""></span>
+      <div class="container">
+        <div class="title-wrap title-wrap--line">
+          <div class="title-site--h2">Тройная гарантия качества от France Piter!</div>
+        </div>
+        <ul class="list-info">
+          <li>
+            <div class="list-info-ic">
+              <div>
+                <i class="icon icon-guarantee1"></i>
+              </div>
+            </div>
+            <div class="list-info-txt">
+              <div class="title-site--h5">Качество работ</div>
+              <p>Предоставляем гарантию на<br>выполненные работы<br> <b>до 6 месяцев.</b></p>
+            </div>
+          </li>
+          <li>
+            <div class="list-info-ic">
+              <div>
+                <i class="icon icon-guarantee2"></i>
+              </div>
+            </div>
+            <div class="list-info-txt">
+              <div class="title-site--h5">Качество запчастей</div>
+              <p>Подбираем только<br><b>оптимальные запчасти по<br> цена-качество!</b> </p>
+            </div>
+          </li>
+          <li>
+            <div class="list-info-ic">
+              <div>
+                <i class="icon icon-guarantee3"></i>
+              </div>
+            </div>
+            <div class="list-info-txt">
+              <div class="title-site--h5">Качество цен</div>
+              <p>Закупаем запчасти напрямую у поставщиков <b>и гарантируем самые низкие цены!</b></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-st section-st--bg" style="background-image: url('img/bg-cont2.jpg')">
+      <div class="container">
+        <div class="title-wrap title-wrap--line">
+          <div class="title-site--h2 col-wt">Тройная гарантия качества от France Piter!</div>
+        </div>
+        <div class="contact">
+          <div class="contact-item">
+            <div class="contact-item__head">
+              <div class="contact-item-tt">МАГАЗИН France-piter</div>
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">Наш адрес: <b>СПб, Московское шоссе, 36</b></div>
+                </li>
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">График работы: <b>Пн-пт: 10:00-20:00,  Сб-Вс: 11:00-17:00</b></div>
+                </li>
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">Наш телефон:  <b>+7 (812) 210-42-89</b></div>
+                </li>
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">Наш e-mail: <b>pro@france-piter.ru</b></div>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-item__body">
+              <div class="contact-item-img-wrap">
+                <a data-fancybox href="img/contact-img1.jpg" class="contact-item-img"><img src="img/contact-img1.jpg" alt=""></a>
+                <a data-fancybox href="img/contact-img2.jpg" class="contact-item-img"><img src="img/contact-img2.jpg" alt=""></a>
+              </div>
+              <div class="map">
+                <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af0543ce994306393d935a5a6fc4ee21b00e223cbae639d0e9f51c9d57e399b99&amp;width=100%25&amp;height=346&amp;lang=ru_UA&amp;scroll=true"></script>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__head">
+              <div class="contact-item-tt">СТО France-piter</div>
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">Наш адрес: <b>СПб, Московское шоссе, 13, корпус Д</b></div>
+                </li>
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">График работы: <b>Пн-пт: 10:00-20:00,  Сб-Вс: 11:00-17:00</b></div>
+                </li>
+                <li>
+                  <div class="contact-list-ic">
+                    <i class="icon icon-place zmdi"></i>
+                  </div>
+                  <div class="contact-list-txt">Наш телефон:  <b>+7 (905) 212-14-32</b></div>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-item__body">
+              <div class="contact-item-img-wrap">
+                <a data-fancybox href="img/contact-img3.jpg" class="contact-item-img"><img src="img/contact-img3.jpg" alt=""></a>
+                <a data-fancybox href="img/contact-img4.jpg" class="contact-item-img"><img src="img/contact-img4.jpg" alt=""></a>
+              </div>
+              <div class="map">
+                <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5b3c78673c8ef4fc96ec6852a7942775cd206e550fff664a039838ab170671a5&amp;width=100%25&amp;height=346&amp;lang=ru_UA&amp;scroll=true"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="footer-cont-wrap">
+    <div class="container">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+      <div class="mark-category">
+        <a href="#" class="mark-category__link"><img src="img/mark-auto1.jpg" alt=""></a>
+        <a href="#" class="mark-category__link"><img src="img/mark-auto2.jpg" alt=""></a>
+        <a href="#" class="mark-category__link"><img src="img/mark-auto3.jpg" alt=""></a>
+      </div>
+      <div class="header-contact-item hidden-devices">
+        <div class="header-contact-ic">
+          <i class="icon icon-phone zmdi"></i>
+        </div>
+        <div class="header-contact-txt">
+          <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+        </div>
+      </div>
+      <a href="#feedback" data-fancybox class="btn btn--min-width btn--sm btn--second-st">
+        <span>Заказать звонок</span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-nav-wrap hidden-devices">
+    <div class="container">
+      <ul class="menu footer-nav">
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Диагностика</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Ремонтные работы</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Тех обслуживание</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link"> Шиномонтаж</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link"> Поиск по VIN</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Каталог</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Видеоблог</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Новости</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contact-wrap">
+    <div class="container">
+      <div class="header-contact footer-contact">
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-time zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">г. СПб, Московское шоссе, 13, корпус Д - ремзона</div>
+            <div class="header-contact-txt__item">г. СПб, Московское шоссе, 36 -магазин</div>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-time zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">Пн-пт: <b>10:00-20:00</b></div>
+            <div class="header-contact-txt__item">Сб-Вс: <b>11:00-17:00</b></div>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-phone zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">Наш телефон:</div>
+            <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+          </div>
+        </div>
+        <div class="header-contact-item header-contact-item--soc">
+          <a href="#" class="link-soc">
+            <span><i class="icon icon-vk zmdi"></i></span>
+          </a>
+          <a href="#" class="link-soc">
+            <span><i class="icon icon-fb zmdi"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</div><!-- #wrapper -->
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/libsmin/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

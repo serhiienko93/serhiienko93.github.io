@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Mi Amor</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+
+<div id="feedback" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt col-wt">Закажите звонок</div>
+    <p>Оставьте свои контактные данные в полях ниже. Менеджер свяжется с вами в течение 30 минут. </p>
+    <form action="#">
+      <div class="form-group">
+        <label for="modal-inp1">Ваш номер телефона</label>
+        <input id="modal-inp1" type="tel" placeholder="Например, +7 (999) 451-78-54">
+      </div>
+      <button class="btn btn--max col-wt">Закажите звонок</button>
+      <div class="check-bl">
+        <label>
+          <input type="checkbox" checked>
+          <span class="check-bl-txt">Вы соглашаетесь с условиями обработки персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="modal-complete" style="display: none;" class="st-modal">
+  <div class="modal-cont text--center">
+    <div class="modal-cont__tt">Ваше сообщение успешно отправлено.</div>
+    <p>В ближайшее время с вами свяжется наш менеджер.</p>
+  </div>
+</div>
+
+
+<div id="one-click" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt">Заказать в один клик</div>
+    <form action="#">
+      <div class="form-group">
+        <label for="modal-inp2">Фамилия *</label>
+        <input id="modal-inp2" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp3">Имя *</label>
+        <input id="modal-inp3" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp4">Отчество</label>
+        <input id="modal-inp4" type="text">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp5">Email *</label>
+        <input id="modal-inp5" type="email">
+      </div>
+      <div class="form-group">
+        <label for="modal-inp6">Ваш номер телефона *</label>
+        <input id="modal-inp6" type="tel">
+      </div>
+      <div class="btn-modal-wrap">
+        <button class="btn btn--max col-wt">Закажите звонок</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="card" style="display: none;" class="st-modal">
+  <div class="modal-cont">
+    <div class="modal-cont__tt modal-cont__tt--2">Ваша корзина</div>
+    <div class="card-list-wrap" data-simplebar data-simplebar-auto-hide="false">
+      <div class="card-list">
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card1.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Пирожные Маракони</div>
+            <div class="card-item-price">1x 699 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card2.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Упаковка № 206</div>
+            <div class="card-item-price">1x 206 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card3.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Букет №402</div>
+            <div class="card-item-price">1x 9 529 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card1.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Пирожные Маракони</div>
+            <div class="card-item-price">1x 699 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card2.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Упаковка № 206</div>
+            <div class="card-item-price">1x 206 руб.</div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__img"><img src="img/card3.jpg" alt=""></div>
+          <div class="card-item__txt">
+            <div class="card-item-tt">Букет №402</div>
+            <div class="card-item-price">1x 9 529 руб.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p><b>12</b> товаров на сумму <b>12 439 руб.</b></p>
+    <button class="btn btn--max col-wt">Оформить заказ</button>
+  </div>
+</div>
+
+<body>
+
+<div id="wrapper">
+
+
+
+
+<!-- header -->
+<header id="header" class="header">
+  <div class="container">
+
+    <div class="logo"><a href="#"><img src="img/logo2.svg" alt=""></a></div>
+
+    <div class="head-menu">
+      <div class="burger-menu">
+        <div class="burger-menu-box">
+          <div class="burger-menu-inner"></div>
+        </div>
+      </div>
+      <div class="menu-wrapper-fixed">
+        <div class="menu-open-wrapper">
+          <nav class="header-nav">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="about.html" class="menu-item__link">О нас</a>
+              </li>
+              <li class="menu-item">
+                <a href="catalog.html" class="menu-item__link">Каталог</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__link">Оформление мероприятий</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__link">Клиентам</a>
+              </li>
+              <li class="menu-item">
+                <a href="contacts.html" class="menu-item__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-cont">
+      <div class="search">
+        <form action="#" class="search-form">
+          <input type="text" placeholder="Поиск...">
+          <button class="btn-search" type="button"><i class="icon icon-search"></i></button>
+        </form>
+      </div>
+      <a href="#card" data-fancybox class="link-basket">
+        <span class="link-basket__ic">
+          <i class="icon icon-cart"></i>
+          <span>2</span>
+        </span>
+        <span class="link-basket__txt">Корзина (12 439 Р)</span>
+      </a>
+    </div>
+
+  </div>
+</header>
+<!-- end header -->
+
+  <div id="middle">
+    <section class="section-map">
+      <div class="map-panel">
+        <a href="#" class="map-panel-item map-panel-item--active">Советский р-н</a>
+        <a href="#" class="map-panel-item">Володарский р-н</a>
+        <a href="#" class="map-panel-item">Бежицкий р-н</a>
+        <a href="#" class="map-panel-item">г. Клинцы</a>
+      </div>
+      <div class="map" id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A90a390adfd3204fd03a6b132c9e68ec9a446c438f91d9ad5e49ab3d8c58ce039&amp;width=100%25&amp;height=515&amp;lang=ru_UA&amp;scroll=true"></script>
+      </div>
+    </section>
+
+    <section class="section-st">
+      <div class="container container--min">
+        <div class="contact">
+          <div class="contact-info">
+            <div class="contact-info__img">
+              <div class="contact-img"><img src="img/cont-img5.jpg" alt=""></div>
+              <div class="company-description-img-ic company-description-img-ic--1"><img src="img/cont-img-ic1.png" alt=""></div>
+              <span class="section-st__img section-st__img--10 hidden-devices"><img src="img/cont-ic6.png" data-parallax='{"y" : -130}' alt=""></span>
+            </div>
+            <div class="contact-info__txt">
+              <div class="title-site--h4">Контактная информация</div>
+              <div class="contact-txt-item">
+                <div class="contact-txt-item__ic">
+                  <i class="icon icon-address"></i>
+                </div>
+                <div class="contact-txt-item__block">
+                  <div>Советский: ост. ТЦ "Аэропарк" (в сторону Бежицкий район)</div>
+                  <div>Володарский: ул. Мичурина, 33а</div>
+                  <div>Бежицкий: ул. Куйбышева, 19</div>
+                  <div>Клинцы: ул. Октябрьская, 38а</div>
+                  <div>ул. Дзержинского, 37</div>
+                  <div>ул. Калинина, 143</div>
+                </div>
+              </div>
+              <div class="contact-txt-item">
+                <div class="contact-txt-item__ic">
+                  <i class="icon icon-phone"></i>
+                </div>
+                <div class="contact-txt-item__block">
+                  <div><a href="tel:79191961616" class="phone-link">+7 (919) 196-16-16</a></div>
+                  <div><a href="tel:79307210000" class="phone-link">+7 (930) 721-00-00</a></div>
+                </div>
+              </div>
+              <div class="contact-txt-item">
+                <div class="contact-txt-item__block">
+                  <div class="contact-txt-item-tt">Мы в соцсетях</div>
+                  <div>
+                    <div class="soc-bl">
+                      <a href="#" class="soc-item soc-item--1">
+                        <span class="soc-item__ic"><img src="img/icon-vk.svg" alt=""></span>
+                        <span class="soc-item__txt">Вконтакте</span>
+                      </a>
+                      <a href="#" class="soc-item soc-item--2">
+                        <span class="soc-item__ic"><img src="img/icon-insta.svg" alt=""></span>
+                        <span class="soc-item__txt">Инстаграм</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <div class="contact-form-wrap__img"><img src="img/cont-img4.jpg" alt=""></div>
+            <div class="contact-form">
+              <form action="#">
+                <div class="form-group">
+                  <label for="inp1">Имя</label>
+                  <input type="text" id="inp1">
+                  <div class="form-group__error">Ошибка</div>
+                </div>
+                <div class="form-group">
+                  <label for="inp2">Ваш номер телефона</label>
+                  <input type="tel" id="inp2" class="error-input">
+                  <div class="form-group__error">Ошибка</div>
+                </div>
+                <div class="form-group">
+                  <label for="inp3">Email</label>
+                  <input type="email" id="inp3">
+                  <div class="form-group__error">Ошибка</div>
+                </div>
+                <div class="form-group">
+                  <label for="txt1">Сообщение</label>
+                  <textarea id="txt1"></textarea>
+                  <div class="form-group__error">Ошибка</div>
+                </div>
+                <button class="btn btn--second-st btn--min-width">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <span class="section-st__img section-st__img--11 hidden-devices"><img src="img/cont-ic7.png" data-parallax='{"y" : 130}' alt=""></span>
+      </div>
+      <span class="section-st__img section-st__img--8 hidden-devices"><img src="img/cont-ic6.png" data-parallax='{"y" : -130}' alt=""></span>
+    </section>
+
+    <section class="section-slider">
+      <div class="section-slider__txt">#galereiatsvetovmiamor</div>
+      <div class="owl-carousel slider-img">
+        <div class="slider-img-item">
+          <img src="img/slider-img1.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img2.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img3.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img4.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img5.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img6.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img1.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img2.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img3.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img4.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img5.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img6.jpg" alt="">
+        </div>
+        <div class="slider-img-item">
+          <img src="img/slider-img1.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="text--center">
+      <i class="icon icon-flower"></i>
+    </div>
+    <div class="footer-cont">
+      <ul class="footer-nav hidden-devices">
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Оформление мероприятий</a></li>
+        <li><a href="#">Клиентам</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer-cont__block">
+        <a href="#" target="_blank" class="link-itc"><img src="img/logo-itc.svg" alt=""></a>
+        <div class="copy">«Mi amor» © 2004 – 2018</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</div><!-- #wrapper -->
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/libsmin/jquery.viewportchecker.min.js"></script>
+<script src="js/libsmin/nouislider.js"></script>
+<script src="js/libsmin/simplebar.js"></script>
+<script src="js/libsmin/jquery.parallax-scroll.js"></script>
+<script src="js/libsmin/jquery.easing.1.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

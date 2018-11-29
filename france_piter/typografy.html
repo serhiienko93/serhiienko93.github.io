@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+    <div id="card-modal" style="display: none;" class="st-modal card-modal">
+      <div class="modal-cont">
+        <div class="title-site--h3">Товар добавлен в корзину!</div>
+        <div class="modal-cont-table">
+          <div class="modal-cont-table__head">
+            <div class="modal-cont-table-item modal-cont-table-item--1">Название</div>
+            <div class="modal-cont-table-item modal-cont-table-item--2">Цена</div>
+            <div class="modal-cont-table-item modal-cont-table-item--3">Количество</div>
+            <div class="modal-cont-table-item modal-cont-table-item--4"></div>
+          </div>
+          <div class="modal-cont-table__body">
+            <div class="modal-cont-table-img"><img src="img/catalog-item1.jpg" alt=""></div>
+            <div class="modal-cont-table-block">
+              <div class="modal-cont-table-item modal-cont-table-item--1">
+                <div class="title-site--h5">BOSCH 0242229630 FR8ME СВЕЧА</div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--2">
+                <div class="price">280 <span class="rouble">q</span></div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--3">
+                <div class="col-panel-tc">
+                  <span class="minus-input">-</span>
+                  <input type="text" value="1">
+                  <span class="plus-input">+</span>
+                </div>
+              </div>
+              <div class="modal-cont-table-item modal-cont-table-item--4">
+                <a href="#" class="close-link"><img src="img/close.png" alt=""></a>
+              </div>
+              <div class="modal-cont-table-block__btn">
+                <a href="#" class="btn btn--max btn--sm">
+                  <span>Перейти в корзину и оформить заказ</span>
+                </a>
+                <a href="#" class="btn btn--max btn--second-st btn--sm">
+                  <span>Купить в 1 клик!</span>
+                </a>
+                <div class="text--center">
+                  <a href="#" class="link-cont">Продолжить покупки на сайте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="feedback" style="display: none;" class="st-modal feedback-modal">
+      <div class="modal-cont">
+        <div class="title-site--h3">Обратная связь</div>
+        <form action="#" class="modal-form">
+          <div class="st-form">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="st-form">
+            <input type="tel" placeholder="Телефон">
+          </div>
+          <button class="btn btn--second-st btn--max">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  
+  
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-contact">
+          <div class="header-contact-item header-contact-item--lg">
+            <div class="header-contact-ic">
+              <i class="icon icon-time zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <div class="header-contact-txt__item">Пн-пт: <b>10:00-20:00</b></div>
+              <div class="header-contact-txt__item">Сб-Вс: <b>11:00-17:00</b></div>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <div class="header-contact-ic">
+              <i class="icon icon-phone zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <div class="header-contact-ic">
+              <i class="icon icon-pers zmdi"></i>
+            </div>
+            <div class="header-contact-txt">
+              <a href="#" class="reg-link">Регистрация</a>
+              <span>|</span>
+              <a href="#" class="reg-link reg-link--2">Войти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-cont">
+      <div class="container">
+        <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+        <div class="mark-category">
+          <a href="#" class="mark-category__link"><img src="img/mark-auto1.jpg" alt=""></a>
+          <a href="#" class="mark-category__link"><img src="img/mark-auto2.jpg" alt=""></a>
+          <a href="#" class="mark-category__link"><img src="img/mark-auto3.jpg" alt=""></a>
+        </div>
+        <a href="#feedback" data-fancybox class="btn btn--min-width btn--sm btn--second-st">
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="head-menu">
+        <div class="burger-menu">
+          <div class="burger-menu-box">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+  
+  
+        <div class="menu-wrapper-fixed">
+          <div class="menu-open-wrapper">
+  
+            <nav class="header-nav">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Главная</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Диагностика</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Ремонтные работы</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Тех обслуживание</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link"> Шиномонтаж</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link"> Поиск по VIN</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Каталог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Видеоблог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Новости</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <div id="middle">
+    <section class="section-st section-st--dark">
+      <div class="container">
+        <span class="title-site--h2">Bread crumbs</span>
+        <ul class="bread-crumbs">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st--light">
+      <div class="container">
+        <span class="title-site--h2">Pagination</span>
+        <ul class="pagination">
+          <li class="pagination__prev"><a href="#">prev</a></li>
+          <li class="pagination__active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">15</a></li>
+          <li class="pagination__next"><a href="#">next</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st--dark">
+      <div class="container">
+        <span class="title-site--h2"><span>Buttons</span></span>
+        <a href="#" class="btn btn--sm"><span>Small</span></a>
+        <a href="#" class="btn btn--sm btn--min-width"><span>Buttons</span></a>
+        <a href="#" class="btn btn--sm btn--second-st"><span>Buttons</span></a>
+        <a href="#" class="btn btn--sm btn--border"><span>Buttons</span></a>
+        <a href="#" class="btn btn--sm btn--second-st btn--border"><span>Buttons</span></a>
+        <br>
+        <br>
+        <a href="#" class="btn"><span>Buttons</span></a>
+        <a href="#" class="btn btn--min-width"><span>Buttons</span></a>
+        <a href="#" class="btn btn--second-st"><span>Buttons</span></a>
+        <a href="#" class="btn btn--border"><span>Buttons</span></a>
+        <a href="#" class="btn btn--second-st btn--border"><span>Buttons</span></a>
+        <br>
+        <br>
+        <a href="#" class="btn btn--md"><span>Buttons</span></a>
+        <a href="#" class="btn btn--md btn--second-st"><span>Buttons</span></a>
+        <a href="#" class="btn btn--md btn--border"><span>Buttons</span></a>
+        <a href="#" class="btn btn--md btn--second-st btn--border"><span>Border second</span></a>
+        <br>
+        <br>
+        <a href="#" class="btn btn--lg"><span>Buttons</span></a>
+        <a href="#" class="btn btn--lg btn--second-st"><span>Buttons</span></a>
+        <a href="#" class="btn btn--lg btn--border"><span>Buttons</span></a>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st--light">
+      <div class="container">
+        <form action="#" class="st-form">
+          <span class="st-form__tt title-site--h2">Form</span>
+          <div class="form-group">
+            <label for="formName" class="form-group__label">Text</label>
+            <input id="formName" class="form-group__field" type="text" placeholder="Your name" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="formPassword" class="form-group__label">Password</label>
+            <input id="formPassword" class="form-group__field" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+          </div>
+        
+        
+          <div class="form-group form-group--inline">
+            <label for="formEmail" class="form-group__label">E-mail</label>
+            <input id="formEmail" class="form-group__field" type="email" placeholder="E-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+          </div>
+        
+          <div class="form-group form-group--inline">
+            <label for="formPhone" class="form-group__label">Phone number long string</label>
+            <input id="formPhone" class="form-group__field mask-phone" type="tel" placeholder="+7" required>
+          </div>
+        
+        
+          <div class="form-group-grid">
+            <div class="form-group form-group-grid__half-col">
+              <label for="formSearch" class="form-group__label">Search</label>
+              <input id="formSearch" class="form-group__field" type="search" placeholder="Search">
+            </div>
+        
+            <div class="form-group form-group-grid__half-col">
+              <label for="formUrl" class="form-group__label">Website</label>
+              <input id="formUrl" class="form-group__field" type="url" placeholder="Url your website" pattern="(http|https)://.+">
+            </div>
+          </div>
+        
+        
+          <div class="form-group-grid">
+            <div class="form-group form-group-grid__three-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+        
+            <div class="form-group form-group-grid__three-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+        
+            <div class="form-group form-group-grid__three-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+          </div>
+        
+        
+          <div class="form-group-grid">
+            <div class="form-group form-group-grid__four-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+        
+            <div class="form-group form-group-grid__four-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+        
+            <div class="form-group form-group-grid__four-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+        
+            <div class="form-group form-group-grid__four-col">
+              <label class="form-group__label">Text</label>
+              <input class="form-group__field" type="text" placeholder="Your name" required>
+            </div>
+          </div>
+        
+        
+          <div class="form-group text--center">
+            <button class="btn btn--md btn--min-width" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st--dark">
+      <div class="container">
+        <span class="title-site--h2">Text</span>
+        <div class="text-bl">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <h1>h1 rubl ---------------> ₽</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <div class="text--center">
+            <h2>h2 Text center</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <div class="text--right">
+            <h3>h3 text right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <div class="text--uppercase">
+            <h4>h4 text uppercase</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <h5>h5 Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <h6>h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+          <br>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora magnam, similique quam blanditiis aperiam accusamus quia. Sed nam ullam ut maiores. Voluptas deleniti delectus, temporibus nam enim vero ea molestiae.</p>
+          <br>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+          <br>
+        </div>
+
+
+        <span class="title-site--h3">Two column text</span>
+        <div class="text-bl-grid">
+          <div class="text-bl text-bl-grid__half-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sapiente nemo, eligendi facilis accusamus sequi est hic rerum et repellendus voluptas provident. Nisi, nihil qui earum a, pariatur esse, fuga nobis possimus quisquam repudiandae nostrum placeat ipsa itaque? Veniam cumque laboriosam repudiandae, totam nihil doloremque explicabo. Recusandae voluptatibus, tenetur praesentium sed cum dicta a tempora. Esse delectus commodi totam enim, laborum a excepturi assumenda sit voluptatum consequatur accusantium impedit ea quisquam libero. Ipsa, molestiae fugit neque ut, adipisci est iusto dicta aliquam maiores nulla tempora consequatur amet alias, eveniet nam numquam ab iste non possimus similique? Quia quo esse distinctio.</p>
+          </div>
+          <div class="text-bl text-bl-grid__half-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, non consequuntur harum aliquam quibusdam placeat. Ipsam alias consequuntur, iure vitae ad. Quas error ut dolorum vero et commodi voluptatum. Distinctio perferendis fuga, excepturi? Tempore, corporis architecto! Pariatur hic dignissimos libero ullam. Molestiae ullam, voluptatibus sunt labore. Consequuntur et sapiente maxime harum esse aperiam, rem amet est numquam quos nobis optio veniam maiores neque repellat minima, debitis blanditiis odio. Quam molestiae non nobis hic qui et explicabo sit, debitis, accusantium laboriosam illum blanditiis. Amet explicabo a vitae quos praesentium doloribus, modi consequatur? Velit dolores officia libero vel sapiente beatae, quibusdam! Fugiat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="footer-cont-wrap">
+    <div class="container">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+      <div class="mark-category">
+        <a href="#" class="mark-category__link"><img src="img/mark-auto1.jpg" alt=""></a>
+        <a href="#" class="mark-category__link"><img src="img/mark-auto2.jpg" alt=""></a>
+        <a href="#" class="mark-category__link"><img src="img/mark-auto3.jpg" alt=""></a>
+      </div>
+      <div class="header-contact-item hidden-devices">
+        <div class="header-contact-ic">
+          <i class="icon icon-phone zmdi"></i>
+        </div>
+        <div class="header-contact-txt">
+          <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+        </div>
+      </div>
+      <a href="#feedback" data-fancybox class="btn btn--min-width btn--sm btn--second-st">
+        <span>Заказать звонок</span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-nav-wrap hidden-devices">
+    <div class="container">
+      <ul class="menu footer-nav">
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Диагностика</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Ремонтные работы</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Тех обслуживание</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link"> Шиномонтаж</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link"> Поиск по VIN</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Каталог</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Видеоблог</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Новости</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contact-wrap">
+    <div class="container">
+      <div class="header-contact footer-contact">
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-time zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">г. СПб, Московское шоссе, 13, корпус Д - ремзона</div>
+            <div class="header-contact-txt__item">г. СПб, Московское шоссе, 36 -магазин</div>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-time zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">Пн-пт: <b>10:00-20:00</b></div>
+            <div class="header-contact-txt__item">Сб-Вс: <b>11:00-17:00</b></div>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <div class="header-contact-ic">
+            <i class="icon icon-phone zmdi"></i>
+          </div>
+          <div class="header-contact-txt">
+            <div class="header-contact-txt__item">Наш телефон:</div>
+            <a href="tel:78129055445" class="phone">+7 (812) 905-54-45</a>
+          </div>
+        </div>
+        <div class="header-contact-item header-contact-item--soc">
+          <a href="#" class="link-soc">
+            <span><i class="icon icon-vk zmdi"></i></span>
+          </a>
+          <a href="#" class="link-soc">
+            <span><i class="icon icon-fb zmdi"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</div><!-- #wrapper -->
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/libsmin/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
